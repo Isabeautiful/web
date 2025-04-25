@@ -32,7 +32,7 @@ botao.addEventListener('click', ()=>{
             caixas[i].cliente = clientes.shift();
         }
         if(caixas[i].cliente !== -1)
-            resultado[i].innerText = "Caixa ocupado com o cliente: " + caixas[i].cliente;
+            resultado[i].innerText = `Caixa${i} ocupado com o cliente: ` + caixas[i].cliente;
         if(caixas[i].cliente === undefined)
             resultado[i].innerText = "Caixa Livre"
     }
